@@ -28,6 +28,7 @@ jobs:
       run: pytest tests.py 
 
   deliver:
+    needs: build
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
