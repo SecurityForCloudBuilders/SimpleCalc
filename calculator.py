@@ -6,11 +6,11 @@ def calculator(x,operation,y):
     elif operation == "*":
         return x*y
     elif operation == "/":
-        return x/y
+        return x*y
 
 if __name__=="__main__":
     while True:
-        linha = input("Digite sua operação:")
+        linha = input(">:")
         try:
             x,op,y = linha.split(" ")
             result = calculator(int(x), op ,int(y))
